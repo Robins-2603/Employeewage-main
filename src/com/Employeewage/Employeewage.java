@@ -1,13 +1,15 @@
 package com.Employeewage;
 
 public class Employeewage {
+    // Declaring Constant
     public static final int Is_Full_time = 1;
     public static final int Is_part_time = 2;
     public static final int Emp_wage_per_hr = 20;
     public static final int no_working_days = 20;
     public static final int Total_working_hrs = 100;
-    public static void main(String[] args) {
-        System.out.println("welcome to Employee wage computation program");
+    //Defining static method for calculate empwage for company
+    public static int ComputeEmpwage () {
+// variables
 
         int Emp_hrs;
         int Salary;
@@ -39,7 +41,12 @@ public class Employeewage {
         System.out.println("Total Empwage is " + total_salary);
         System.out.println("Total EmpHrs is " + total_wrk_hrs);
         System.out.println("Total EmpDays is " + total_wrk_days);
+        return total_salary;
 
+    }
+    public static void main(String[] args) {
+        System.out.println("welcome to Employee wage computation program");
+        ComputeEmpwage();
 
 
     }
